@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+}
+
+.view {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    position: relative;
+}
+
+@media only screen and (min-width: 768px) {
+    .content {
+        width: 33%;
+    }
+}
+
+.content div {
+    display: flex;
+    justify-content: center;
+}
+
+div.row-book {
+    height: auto;
+}
+
+div.row-book img {
+    width: 25%;
+}
+
+div.row-text {
+    font-family: 'Londrina Solid', cursive;
+    font-size: 200%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+div.row-stars {
+    width: 100%;
+    padding-top: 10px;
+    padding-left: 30%;
+    padding-right: 30%;
+}
+
+div.row-stars div {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    aspect-ratio: 1;
+    width: 25%;
+    min-width: 20px;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 10px;
+}
+
+div.empty {
+    background-image: url(images/estrela_vazia.svg);
+}
+
+div.filled {
+    background: url(images/estrela_cheia.svg) center center no-repeat;
+}
+
+.row-buttons {
+    margin-top: 25%;
+    margin-bottom: 20px;
+    justify-content: right;
+}
+
+div.pular {
+    color: #2CC6D0;
+    font-family: 'Work Sans', sans-serif;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+[class*="confirmar-"] {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    font-family: 'Work Sans', sans-serif;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 30px;
+}
+
+div.confirmar-empty {
+    background-color: #C8C8C8;
+    box-shadow: -4px 12px 25px -10px rgba(0, 0, 0, 0.5);
+}
+
+div.confirmar-filled {
+    background-color: #2CC6D0;
+    box-shadow: -4px 12px 25px -10px #2EAFB9;
+}
