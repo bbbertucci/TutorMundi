@@ -5,22 +5,22 @@
 .view {
     display: flex;
     justify-content: center;
-    height: 100%;
     position: relative;
+    height: 100%;
 }
 
 .content {
-    width: 100%;
     position: absolute;
-    top: 20%;
     font-size: 200%;
     font-family: 'Londrina Solid', cursive;
     text-align: center;
+    top: 20%;
+    width: 100%;
 }
 
 .row-buttons {
     position: absolute;
-    bottom: 5%;
+    bottom: 6%;
     width: 100%;
 }
 
@@ -38,10 +38,6 @@
 .content div {
     display: flex;
     justify-content: center;
-}
-
-.row-book {
-    height: auto;
 }
 
 .row-book img {
@@ -62,13 +58,13 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    cursor: pointer;
     aspect-ratio: 1;
     width: 15%;
     max-width: 40px;
     margin-left: 6px;
     margin-right: 6px;
     margin-top: 10px;
-    cursor: pointer;
 }
 
 .empty {
@@ -89,12 +85,12 @@
     color: #2CC6D0;
     background-color: transparent;
     font-family: 'Work Sans', sans-serif;
-    width: 50px;
     position: absolute;
+    cursor: pointer;
+    width: 50px;
     left: 30%;
     padding-top: 12px;
     padding-bottom: 12px;
-    cursor: pointer;
 }
 
 [class*="confirmar-"] {

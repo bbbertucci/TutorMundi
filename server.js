@@ -13,5 +13,5 @@ app.get('/', (req, res) => {
 });
 
 app.post('/', (req, res) => {
-    console.dir(req.body.num_stars);
+    console.log(req.body.num_stars);
 });
